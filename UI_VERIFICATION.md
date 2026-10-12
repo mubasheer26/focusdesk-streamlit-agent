@@ -1,5 +1,24 @@
 # UI verification
 
+## Published repository clean-checkout verification — 12 October 2026
+
+Repository: https://github.com/mubasheer26/focusdesk-streamlit-agent
+
+- Cloned published commit `b333473` into a new `focusdesk-submission-check` folder.
+  No application files were copied in or modified after cloning.
+- Created a fresh `.venv` with Python 3.14 on Windows and installed using exactly
+  `python -m pip install -r requirements.txt` inside that environment.
+- All **28 tests passed** in 3.281 seconds. `pip check` reported no broken requirements.
+- Started the documented Streamlit command with only the port changed to 8504
+  because the earlier verification app was still using another port.
+- Opened the browser and verified the empty chat and notebook rendered correctly.
+  The existing local Ollama installation and downloaded model are prerequisites;
+  they were reused, not bundled or reinstalled.
+- The working tree was clean after setup and tests. Virtual environments and local
+  databases are ignored. This completes the earlier pending public-checkout check.
+
+The following sections preserve earlier checks and real-model observations.
+
 ## Recheck — 12 October 2026
 
 - Cloned the public repository at `27ebea0` into `focusdesk-clean-20261012`.
