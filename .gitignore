@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+data/
+recordings/
+.env
+.env.*
+!.env.example
+*.db
+*.db-wal
+*.db-shm
+.venv/
+LEARN_TANGLISH.md
+*TANGLISH*
+private-notes/
